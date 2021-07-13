@@ -23,10 +23,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm test"
+      "pre-commit": "lint-staged"
     }
   },
+	"jest": {
+		"transformIgnorePatterns": ["<rootDir>/node_modules/(?!d3)/"],
+		"transform": {"^.+\\.js$": "babel-jest"	}
+	},
   "lint-staged": {
     "*.js": [
       "./node_modules/.bin/eslint -c .eslintrc",

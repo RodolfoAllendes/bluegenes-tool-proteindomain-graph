@@ -22,7 +22,6 @@
 		"linebreak-style": ["error", "unix"],
 		"quotes": ["error", "single"],
 		"semi": ["error", "always"],
-    "prettier/prettier": "error",
     "comma-dangle": ["error", "never"]
   },
   "settings": {
