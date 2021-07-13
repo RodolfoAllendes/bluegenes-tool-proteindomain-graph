@@ -1,0 +1,13 @@
+{
+  "accepts": ["id"],
+  "classes": ["Protein"],
+  "files" : {
+    "css" : "dist/style.css",
+    "js" : "dist/bundle.js"
+  },
+  "toolName" : {
+    "human" :"Protein Domain Graph",
+    "cljs" :"bluegenesToolProteinDomainGraph"    
+  },
+  "version": 2
+}
