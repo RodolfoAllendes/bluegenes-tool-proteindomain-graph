@@ -15,13 +15,14 @@ function main(el, service, imEntity, state, config) {
 
 		query.select([
 			'primaryAccession',
-			'name',
-			'proteinDomainRegions.originalDb',
-			'proteinDomainRegions.originalId',
+			'length',
+
 			'proteinDomainRegions.start',
 			'proteinDomainRegions.end',
+			'proteinDomainRegions.originalId',
+
 			'proteinDomainRegions.proteinDomain.primaryIdentifier',
-			'proteinDomainRegions.proteinDomain.name'
+			'proteinDomainRegions.proteinDomain.type'
 		]);
 
 		query.addConstraint({
@@ -41,6 +42,8 @@ function main(el, service, imEntity, state, config) {
 				<svg id="canvas_proteinDomain" class="targetmineGraphSVG">
 					<g id="graph">
 						<g id="xAxis"></g>
+						<g id="leftAxis"></g>
+						<g id="rightAxis"></g>
 						<g id="bars"></g>
 					</g>
 				</svg>
