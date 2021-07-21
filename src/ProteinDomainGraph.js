@@ -29,6 +29,7 @@ export class ProteinDomainGraph{
 						i, type: 'rect',
 						leftTick: r.proteinDomain.primaryIdentifier,
 						rightTick: r.originalId,
+						name: r.proteinDomain.name,
 						start: r.start,
 						end: r.end,
 						color: v
@@ -74,7 +75,9 @@ export class ProteinDomainGraph{
 					.attr('y', d => this.left(d.i))
 					.attr('width', d => this.x(d.end)-this.x(d.start))
 					.attr('height', this.left.bandwidth)
-					.attr('fill', d => d.color);
+					.attr('fill', d => d.color)
+					.append('svg:title')
+						.text(d => d.name);
 		
 		d3.select('g#bars').selectAll('text')
 			.data(this.rows.filter(d => d.type === 'title'))

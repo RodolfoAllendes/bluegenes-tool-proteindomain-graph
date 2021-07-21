@@ -22,7 +22,8 @@ function main(el, service, imEntity, state, config) {
 			'proteinDomainRegions.originalId',
 
 			'proteinDomainRegions.proteinDomain.primaryIdentifier',
-			'proteinDomainRegions.proteinDomain.type'
+			'proteinDomainRegions.proteinDomain.type',
+			'proteinDomainRegions.proteinDomain.name'
 		]);
 
 		query.addConstraint({
