@@ -1,10 +1,9 @@
 #  Protein Domain Graph
 
-Protein Domain Graph is a tool made for [BlueGenes](http://bluegenes.apps.intermine.org) following BlueGenes Tool API.
-Add more description of your tool here! :)
+Protein Domain Graph is a tool made for [BlueGenes](http://bluegenes.apps.intermine.org) following BlueGenes Tool API. This tool displays a Grapth that summarizes different domain annotationts associated to an individual protein. Annotation information includes Domain, Homologous superfamily, Family and Convserved sites.
 
 ## Licence
-
+MIT
 
 ### To set up locally for development
 
